@@ -3,7 +3,6 @@ body {
     padding: 0;
     font-family: sans-serif;
     user-select: none;
-
 }
 
 nav {
@@ -600,7 +599,6 @@ textarea::-webkit-input-placeholder {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         color: #FFF;
         height: 50px;
         padding: 1em;
@@ -711,8 +709,6 @@ textarea::-webkit-input-placeholder {
 }
 
 @media (max-width: 767px) {
-    /*при розмірі екрану менше 767px виключаємо відображення відео в контейнері і
-    встановлюємо рисунок на фон контейнеру*/
     #video {
         display: none;
     }
@@ -726,8 +722,8 @@ textarea::-webkit-input-placeholder {
 
 .container{
     width: 100%;
-    min-height: 100vh;
 }
+
 .container h2{
     color: #000000;
     font-size:32px;
