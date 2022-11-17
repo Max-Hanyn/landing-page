@@ -279,7 +279,7 @@ nav {
     color: black;
 }
 
-label {
+form label {
     position: absolute;
     left: 5px;
     top: 13px;
@@ -721,6 +721,88 @@ textarea::-webkit-input-placeholder {
         background-size: cover;
         height: 300px;
         width: 100%;
+    }
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+}
+.container h2{
+    color: #000000;
+    font-size:32px;
+    padding:50px 0;
+    text-align: center;
+}
+.price-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.price-col{
+    background: #932626;
+    padding: 20px 60px 30px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+}
+.price-col p{
+    font-size: 22px;
+}
+.price-col h3{
+    font-size: 44px;
+    margin: 20px 0 40px;
+    font-weight: 500;
+}
+.price-col h3 span{
+    font-size: 16px;
+}
+.price-col ul{
+    text-align: left;
+    margin: 20px 0;
+    color: #ddd;
+    min-height: 150px;
+}
+.price-col ul li{
+    margin: 15px 0;
+    size: 20px;
+}
+.price-col button{
+    width: 100%;
+    padding: 14px 0;
+    background: transparent;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+.price-col button:hover{
+    background: #fa2340;
+}
+
+@media screen and (max-width: 400px) {
+
+    .price-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .price-col{
+        width: 270px;
+        background: #932626;
+        padding: 20px 30px 30px;
+        border-radius: 10px;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .price-col {
+        width: 230px;
     }
 }
 
